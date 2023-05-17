@@ -62,11 +62,11 @@ os usuários.
 
 A equipe de desenvolvimento responsável pela implementação do projeto iMobi é composta por:
 
-Fernanda
-Jonathan
-Linnyck
-Thayana
-Vania
+Fernanda Schettini - linkedin.com/in/fernanda-schettini
+Jonathan Alves - linkedin.com/in/jonathan-alvesc
+Linnyck Calvacante - linkedin.com/in/linnyck-cavalcante
+Thayana Sampaio - linkedin.com/in/thayana-sampaio
+Vania Morgado - linkedin.com/in/vanialmorgado
 
 Agradecemos pelo interesse no projeto iMobi. Em caso de dúvidas ou solicitações, entre em contato com a equipe de desenvolvimento.
 
