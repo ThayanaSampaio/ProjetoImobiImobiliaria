@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Simulador de reforma">
+        <div class="slds-p-around_medium">
+            <lightning-combobox label="Tipo de reforma" value={tipoReforma} options={tipoReformaOptions}
+                onchange={handleTipoReforma}></lightning-combobox>
+
+            <lightning-combobox label="Área aproximada (m²)" value={area} options={areaOptions}
+                onchange={handleArea}></lightning-combobox>
+            
+            <template if:true={showFormTipoReforma1}>
+                <lightning-combobox label="Padrão de acabamento" value={padraoAcabamento} options={padraoAcabamentoOptions}
+                    onchange={handlePadraoAcabamento}></lightning-combobox>
+            </template>
+
+            <template if:true={showFormTipoReforma2}>
+                <lightning-combobox label="Tipo de de piso" value={tipoPiso} options={tipoPisoOptions}
+                    onchange={handleTipoPiso}></lightning-combobox>
+            </template>
+
+            <div class="slds-m-top_medium">
+                <lightning-button variant="brand" label="Calcular" onclick={calcularSimulacao}></lightning-button>
+                <template if:true={showRefresh}>
+                    <lightning-button class="slds-m-left_medium" variant="destructive-text" label="Refresh"
+                        onclick={resetAction}></lightning-button>
+                </template>
+            </div>
+            <template if:true={showError}>
+                <p style="color: red;">Por favor, preencha todos os campos.</p>
+            </template>
+            <div if:true={showResultado} class="slds-m-top_medium">
+                <p>O valor da simulação é de R${simulacao}</p>
+            </div>
+        </div>
+    </lightning-card>
+</template>
